@@ -165,11 +165,11 @@ disqus:
     username: 
 # gitment 配置参考：https://imsun.net/posts/gitment-introduction/
 gitment:
-    owner: mzlogin
-    repo: blog-comments
+    owner: xiangxu05
+    repo: xiangxu05.github.io
     oauth:
-        client_id: d2e1cbbd298958076462
-        client_secret: b42a4178e5fd4a7cf63189ef4b1453b05c375709
+        client_id: Ov23lik2oaxAt7v79jqJ
+        client_secret: f59a130bed758aa453f0f682913d6443167589c2
 # gitalk 配置参考：https://github.com/gitalk/gitalk#install
 gitalk:
     owner: mzlogin
