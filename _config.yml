@@ -157,7 +157,7 @@ collections:
 #      Comments    #
 # ---------------- #
 # support provider: disqus, gitment, gitalk, utterances, beaudar, giscus
-comments_provider: giscus
+comments_provider: gitalk
 # !!!重要!!! 请修改下面这些信息为你自己申请的
 # !!!Important!!! Please modify infos below to yours
 # disqus 配置参考：https://disqus.com
@@ -172,10 +172,10 @@ gitment:
         client_secret: f59a130bed758aa453f0f682913d6443167589c2
 # gitalk 配置参考：https://github.com/gitalk/gitalk#install
 gitalk:
-    owner: mzlogin
-    repo: blog-comments
-    clientID: d2e1cbbd298958076462
-    clientSecret: b42a4178e5fd4a7cf63189ef4b1453b05c375709
+    owner: xiangxu05
+    repo: xiangxu05.github.io
+    clientID: Ov23lik2oaxAt7v79jqJ
+    clientSecret: f59a130bed758aa453f0f682913d6443167589c2
 # utterances 配置参考：https://utteranc.es/
 utterances:
     repo: mzlogin/blog-comments
