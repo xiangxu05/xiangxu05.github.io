@@ -1,8 +1,9 @@
 - name: Software Engineer Keywords
   keywords:
-      - Java
+      # - Java
       - C++
       - Python
+      - Embedded
       - Design Patterns
 
 - name: Mobile Developer Keywords
