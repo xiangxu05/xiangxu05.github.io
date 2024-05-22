@@ -2,7 +2,7 @@
 #   Main Configs   #
 # ---------------- #
 baseurl:
-url: https://xiangxu05.github.io/
+url: https://xiangxu05.github.io
 date_format: "ordinal"
 title: XX者说
 subtitle: "你好，我是项许"
