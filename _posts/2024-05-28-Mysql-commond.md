@@ -246,7 +246,7 @@ drop table [if exists] 数据表1 [,数据表2，……，数据表n]；
 
 ### Mysql体系结构
 
-![体系结构图](../images/posts/2024-05-28-Mysql-commond.assets/3c7cec536a604495ae97cb54ffd7e6a2.png)
+![体系结构图](2024-05-28-Mysql-commond.assets/3c7cec536a604495ae97cb54ffd7e6a2.png)
 
 #### InnoDB 存储引擎（默认）
 
@@ -282,7 +282,7 @@ MyISAM存储引擎的文件类型：xxx.sdi：存储表结构信息 (8.0以后)�
 
 xxx.sdi：存储表结构信息
 
-![引擎比较](../images/posts/2024-05-28-Mysql-commond.assets/30d7e7b4350b44448627993e73505bb6.png)
+![引擎比较](2024-05-28-Mysql-commond.assets/30d7e7b4350b44448627993e73505bb6.png)
 
 ### Mysql数据类型
 
@@ -290,9 +290,9 @@ xxx.sdi：存储表结构信息
 
 MySQL中的整数类型包括TINYINT、SMALLINT、MEDIUMINT、INT(INTEGER)和BIGINT。不同的整数类型，其所需要的存储空间和数值范围不尽相同。
 
-![img](../images/posts/2024-05-28-Mysql-commond.assets/watermark,text_ZG1mZW5vd2JlaWppbmc,color_FFFFFF,size_11,shadow_100,t_100,g_se,order_0,align_2,interval_4.jpeg)
+![img](2024-05-28-Mysql-commond.assets/watermark,text_ZG1mZW5vd2JlaWppbmc,color_FFFFFF,size_11,shadow_100,t_100,g_se,order_0,align_2,interval_4.jpeg)
 
-![img](../images/posts/2024-05-28-Mysql-commond.assets/watermark,text_ZG1mZW5vd2JlaWppbmc,color_FFFFFF,size_20,shadow_100,t_100,g_se,order_0,align_2,interval_4.jpeg)
+![img](2024-05-28-Mysql-commond.assets/watermark,text_ZG1mZW5vd2JlaWppbmc,color_FFFFFF,size_20,shadow_100,t_100,g_se,order_0,align_2,interval_4.jpeg)
 
 `CREATE TABLE t2(id INT(6));`指定的是显示宽度，只要不溢出都不会报错，`CREATE TABLE t3(id1 INT ZEROFILL, id2 INT(6) ZEROFILL);`可以用0填充高位数。
 
@@ -302,9 +302,9 @@ MySQL中的整数类型包括TINYINT、SMALLINT、MEDIUMINT、INT(INTEGER)和BIG
 
 浮点数类型主要有两种：单精度浮点数FLOAT和双精度浮点数DOUBLE。
 
-![img](../images/posts/2024-05-28-Mysql-commond.assets/da577de74fd24084a2da99601fff16eb.jpg)
+![img](2024-05-28-Mysql-commond.assets/da577de74fd24084a2da99601fff16eb.jpg)
 
-![img](../images/posts/2024-05-28-Mysql-commond.assets/watermark,text_ZG1mZW5vd2JlaWppbmc,color_FFFFFF,size_9,shadow_100,t_100,g_se,order_0,align_2,interval_4.jpeg)
+![img](2024-05-28-Mysql-commond.assets/watermark,text_ZG1mZW5vd2JlaWppbmc,color_FFFFFF,size_9,shadow_100,t_100,g_se,order_0,align_2,interval_4.jpeg)
 
 对于浮点数来说，可以使用(M,D)的方式进行表示，(M,D)表示当前数值包含整数位和小数位一共会显示M位数字，其中，小数点后会显示D位数字，M又被称为精度，D又被称为标度。
 
@@ -320,4 +320,8 @@ mysql> CREATE TABLE t7 (
 MySQL中的定点数类型只有DECIMAL一种类型。DECIMAL类型也可以使用(M,D)进行表示，其中，M被称为精度，是数据的总位数；D被称为标度，表示数据的小数部分所占的位数。定点数在MySQL内部是以字符串的形式进行存储的，它的精度比浮点数更加精确，适合存储表示金额等需要高精度的数据。
 
 DECIMAL(M,D)类型的数据的最大取值范围与DOUBLE类型一样，但是有效的数据范围是由M和D决定的。而DECIMAL的存储空间并不是固定的，由精度值M决定，总共占用的存储空间为M+2个字节。定点数类型中的DECIMAL类型不指定精度时，默认为DECIMAL(10,0)。
+
+
+
+
 
