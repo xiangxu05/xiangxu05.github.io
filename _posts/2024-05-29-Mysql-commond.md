@@ -14,7 +14,7 @@ mindmap2: false
 
 
 
-这篇文章用来记录Mysql的基本命令，以及后续遇到的一些知识和问题。主要内容来源于：[MySQL入门技能树](https://edu.csdn.net/skill/mysql)，以及[MySQL 教程 | 菜鸟教程](https://www.runoob.com/mysql/mysql-tutorial.html)，感谢！
+这篇文章用来记录Mysql的基本命令，以及后续遇到的一些知识和问题。主要内容来源于：[MySQL入门技能树](https://edu.csdn.net/skill/mysql)，以及[菜鸟教程](https://www.runoob.com/mysql/mysql-tutorial.html)，感谢！
 
 ## 0x00 基本命令
 
@@ -101,7 +101,7 @@ alter database database_name character set character_name collate collate_name;
 
 - 删除数据库
 
-```
+```mysql
 drop database [if exists] database_name;
 ```
 
