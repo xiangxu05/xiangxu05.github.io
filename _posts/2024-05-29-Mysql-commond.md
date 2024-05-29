@@ -12,7 +12,7 @@ mindmap: false
 mindmap2: false 
 ---
 
-这篇文章用来记录Mysql的基本命令，以及后续遇到的一些知识和问题。
+这篇文章用来记录Mysql的基本命令，以及后续遇到的一些知识和问题。主要内容来源于：[MySQL入门技能树 (csdn.net)](https://edu.csdn.net/skill/mysql)，以及[MySQL 教程 | 菜鸟教程 (runoob.com)](https://www.runoob.com/mysql/mysql-tutorial.html)，感谢！
 
 ## 0x00 基本命令
 
@@ -336,7 +336,7 @@ from table_name #查询数据的表的名称
 
 ### Mysql体系结构
 
-![体系结构图](/images/2024-05-28-Mysql-commond.assets/3c7cec536a604495ae97cb54ffd7e6a2.png)
+![体系结构图](/images/posts/2024-05-28-Mysql-commond.assets/3c7cec536a604495ae97cb54ffd7e6a2.png)
 
 #### InnoDB 存储引擎（默认）
 
@@ -372,7 +372,7 @@ MyISAM存储引擎的文件类型：xxx.sdi：存储表结构信息 (8.0以后)�
 
 xxx.sdi：存储表结构信息
 
-![引擎比较](/images/2024-05-28-Mysql-commond.assets/30d7e7b4350b44448627993e73505bb6.png)
+![引擎比较](/images/posts/2024-05-28-Mysql-commond.assets/30d7e7b4350b44448627993e73505bb6.png)
 
 ### Mysql数据类型
 
@@ -492,7 +492,7 @@ set time_zone = '+6:00' #设置时区
 
 MySQL中，文本字符串总体上分为CHAR、VARCHAR、TINYTEXT、TEXT、MEDIUMTEXT、LONGTEXT、ENUM、SET和JSON等类型。
 
-![img](/images/2024-05-28-Mysql-commond.assets/watermark,text_ZG1mZW5vd2JlaWppbmc,color_FFFFFF,size_16,shadow_100,t_100,g_se,order_0,align_2,interval_4.jpeg)
+![img](/images/posts/2024-05-28-Mysql-commond.assets/watermark,text_ZG1mZW5vd2JlaWppbmc,color_FFFFFF,size_16,shadow_100,t_100,g_se,order_0,align_2,interval_4.jpeg)
 
 ##### CHAR与VARCHAR类型
 
@@ -522,7 +522,7 @@ SET表示一个字符串对象，可以包含0个或多个成员，但成员个�
 
 当向SET类型的字段插入SET成员中不存在的值时，MySQL会抛出错误。
 
-![img](/images/2024-05-28-Mysql-commond.assets/watermark,text_ZG1mZW5vd2JlaWppbmc,color_FFFFFF,size_11,shadow_100,t_100,g_se,order_0,align_2,interval_4-1716948510321-8.jpeg)
+![img](/images/posts/2024-05-28-Mysql-commond.assets/watermark,text_ZG1mZW5vd2JlaWppbmc,color_FFFFFF,size_11,shadow_100,t_100,g_se,order_0,align_2,interval_4-1716948510321-8.jpeg)
 
 ##### JSON类型
 
