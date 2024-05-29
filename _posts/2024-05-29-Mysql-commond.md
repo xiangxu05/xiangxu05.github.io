@@ -12,7 +12,9 @@ mindmap: false
 mindmap2: false 
 ---
 
-这篇文章用来记录Mysql的基本命令，以及后续遇到的一些知识和问题。主要内容来源于：[MySQL入门技能树 (csdn.net)](https://edu.csdn.net/skill/mysql)，以及[MySQL 教程 | 菜鸟教程 (runoob.com)](https://www.runoob.com/mysql/mysql-tutorial.html)，感谢！
+
+
+这篇文章用来记录Mysql的基本命令，以及后续遇到的一些知识和问题。主要内容来源于：[MySQL入门技能树](https://edu.csdn.net/skill/mysql)，以及[MySQL 教程 | 菜鸟教程](https://www.runoob.com/mysql/mysql-tutorial.html)，感谢！
 
 ## 0x00 基本命令
 
