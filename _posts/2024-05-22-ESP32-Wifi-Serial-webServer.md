@@ -28,7 +28,7 @@ mindmap2: false
 
    ```c++
    static bool mode(wifi_mode_t);
-   
+   /*
    @param wifi_mode_t           WIFI模式，模式列表:
            WIFI_OFF             不作定义
            WIFI_STA             定义为STA模式,相当于无线终端，不接受无线的接入
@@ -36,6 +36,7 @@ mindmap2: false
            WIFI_AP_STA          定义为STA和AP共存模式
    
    @return                     成功返回1,失败返回0
+   */
    ```
 
    要使用APSTA模式，因此需要将WIFI设置为WIFI_AP_STA：
@@ -48,14 +49,15 @@ mindmap2: false
 
    ```c++
    bool softAP(const char* ssid, const char* passphrase = NULL, int channel = 1, int ssid_hidden = 0, int max_connection = 4, bool ftm_responder = false);
-   
-    @param ssid                         指向SSID字符串的指针(最大63字节)。
-    @param passphrase                   可选，默认 = NULL，用于WPA2加密的WIFI密码，最少8字节，开放WIFI可以用NULL。
-    @param channel                      可选，默认 = 1，WIFI频道号码，1-13。
-    @param ssid_hidden                  可选，默认 = 0，网络隐藏(0 = 广播SSID,1 = 隐藏SSID)。
-    @param max_connection               可选，默认 = 4， 最大同时连接的客户端, 1 - 4。
-    @ftm_responder                      可选，默认 = false，一种高速传输模式可以d在高带宽且低延迟的情况下与另一个 ESP32 设备进行通信。
-    @return                             成功返回true,不成功返回false
+   /*
+   @param ssid                         指向SSID字符串的指针(最大63字节)。
+   @param passphrase                   可选，默认 = NULL，用于WPA2加密的WIFI密码，最少8字节，开放WIFI可以用NULL。
+   @param channel                      可选，默认 = 1，WIFI频道号码，1-13。
+   @param ssid_hidden                  可选，默认 = 0，网络隐藏(0 = 广播SSID,1 = 隐藏SSID)。
+   @param max_connection               可选，默认 = 4， 最大同时连接的客户端, 1 - 4。
+   @ftm_responder                      可选，默认 = false，一种高速传输模式可以d在高带宽且低延迟的情况下与另一个 ESP32 设备进行通信。
+   @return                             成功返回true,不成功返回false
+   */
    ```
 
    可以通过这个方法来对ESP32的AP参数进行设置。
@@ -68,12 +70,13 @@ mindmap2: false
 
    ```c++
    bool softAPConfig(IPAddress local_ip, IPAddress gateway, IPAddress subnet, IPAddress dhcp_lease_start = (uint32_t) 0);
-   
+   /*
    @param local_ip                配置AP的IP地址
    @param gateway                 配置AP的网关IP地址
    @param subnet                  配置AP的子网掩码
    @dhcp_lease_start              配置AP的DHCP租约开始
    @return                        成功返回true,失败返回false
+   */
    ```
 
    此时仅对AP的local_ip、gateway、subnet进行配置。
@@ -86,7 +89,7 @@ mindmap2: false
 
    ```c++
    wl_status_t begin(const char* wpa2_ssid, wpa2_auth_method_t method, const char* wpa2_identity=NULL, const char* wpa2_username=NULL, const char *wpa2_password=NULL, const char* ca_pem=NULL, const char* client_crt=NULL, const char* client_key=NULL, int32_t channel=0, const uint8_t* bssid=0, bool connect=true);
-   
+   /*
    @param wpa2_ssid				用于连接的WiFi网络的SSID。
    @param method					使用的WPA2认证方法。
    @param wpa2_identity			可选,用于WPA2 Enterprise认证的身份。
@@ -99,28 +102,32 @@ mindmap2: false
    @param bssid					可选,指定要连接的接入点的BSSID（MAC地址）。
    @param connect					可选,是否立即连接到指定的网络，默认为true。
    @return							返回连接状态，类型为 wl_status_t。
+   */
    
    wl_status_t begin(const char* ssid, const char *passphrase = NULL, int32_t channel = 0, const uint8_t* bssid = NULL, bool connect = true);
-   
+   /*
    @param ssid						用于连接的WiFi网络的SSID。
    @param passphrase				可选,用于连接WiFi网络的密码。
    @param channel					可选,指定要连接的WiFi信道，默认为0（自动选择）。
    @param bssid					可选,指定要连接的接入点的BSSID（MAC地址）。
    @param connect					可选,是否立即连接到指定的网络，默认为true。
    @return							返回连接状态，类型为 wl_status_t。
+   */
    
    wl_status_t begin(char* ssid, char *passphrase = NULL, int32_t channel = 0, const uint8_t* bssid = NULL, bool connect = true);
-   
+   /*
    @param ssid						用于连接的WiFi网络的SSID。
    @param passphrase				可选,用于连接WiFi网络的密码。
    @param channel					可选,指定要连接的WiFi信道，默认为0（自动选择）。
    @param bssid					可选,指定要连接的接入点的BSSID（MAC地址）。
    @param connect					可选,是否立即连接到指定的网络，默认为true。
    @return							返回连接状态，类型为 wl_status_t。
+   */
    
    wl_status_t begin();			无参数，该方法尝试连接到上一次配置的WiFi网络。
-   
+   /*
    @return							返回连接状态，类型为 wl_status_t。
+   */
    ```
 
    此时，仅传入对应的ssid与password就行。
@@ -192,7 +199,7 @@ mindmap2: false
 
    ```c++
    void begin(uint16_t port=0);
-   
+   /*
    @param port						可选，服务器监听的端口号，默认为0。如果设置为0，服务器将选择一个默认端口。
    @return							无返回值。
    
@@ -201,6 +208,7 @@ mindmap2: false
    @param port						服务器监听的端口号。
    @param  reuse_enable			是否启用端口重用，通常用于服务器在重启时可以立即绑定到同一端口。非零值表示启用，零值表示禁用。
    @return							无返回值。
+   */
    ```
 
    简单的，此时仅传入一个开放端口。
@@ -213,8 +221,9 @@ mindmap2: false
 
    ```c++
    WiFiClient available();
-   
+   /*
    @return							返回一个WiFiClient类型
+   */
    ```
 
 5. WiFiClient
@@ -223,20 +232,23 @@ mindmap2: false
 
    ```c++
    int available();
-   
+   /*
    @return							可用返回1,不可用返回0
+   */
    
    uint8_t connected();
-   
+   /*
    @return							返回 1 表示当前 WiFiClient 对象与服务器或客户端保持连接。返回 0 表示连接已经断开。
+   */
    
    int read();
-   
+   /*
    @return							返回一个收到的数据，不能收到数返回-1。
+   */
    ```
-
+   
    至此，可以实现一个监听串口与TCP端口的方法。
-
+   
    ```c++
    static void TCP_Server_user()
    
@@ -335,32 +347,37 @@ Preferences支持多种存储的数据类型，为了统一格式因此我们均
 
 ```c++
 bool begin(const char *name, bool readOnly);
-
+/*
 @name: 用于标识命名空间的字符串。这个命名空间将包含一组相关的键值对。
 @readOnly: 如果设置为 `true`，则以只读模式打开首选项；如果设置为 `false`，则以读写模式打开首选项。
 @return: 成功返回 `true`，失败返回 `false`。
+*/
 
 void clear();
-
+/*
 无参数。这个方法会清除当前命名空间中的所有键值对。
 @return: 无返回值。
+*/
 
 void end();
-
+/*
 无参数。这个方法会结束对当前命名空间的操作，释放相关资源。
 @return: 无返回值。
+*/
 
 String getString(const char* key, const String& defaultValue = String());
-
+/*
 @key: 要读取的字符串键。
 @defaultValue: （可选）如果指定的键不存在，返回的默认字符串值。
 @return: 返回与键关联的字符串值。如果键不存在，则返回 `defaultValue`。
+*/
 
 bool putString(const char* key, const String& value);
-
+/*
 @key: 要写入的字符串键。
 @value: 要写入的字符串值。
 @return: 成功返回 `true`，失败返回 `false`。
+*/
 ```
 
 因此在单片机启动时，做了如下操作以实现默认值启动WIFI。
@@ -399,37 +416,43 @@ ESP32提供了一个简便使用的WebServer，包含于头文件<WebServer.h>�
 
 ```c++
 WebServer webserver(uint16_t port);
-
+/*
 @port: 用于初始化 `WebServer` 对象的端口号。服务器将在该端口上监听HTTP请求。
 @return: 无返回值（这是构造函数，用于创建 `WebServer` 对象）。
+*/
 
 void on(const Uri &uri, THandlerFunction handler);
-
+/*
 @uri: 用于匹配请求路径的字符串。例如，`"/"` 表示根路径。
 @handler: 与该路径关联的处理函数。当该路径收到HTTP请求时，将调用此函数。
 @return: 无返回值。
+*/
 
 void onNotFound(THandlerFunction fn);
-
+/*
 @fn: 处理未找到页面的函数。当请求的路径未被任何处理函数匹配时，将调用此函数。
 @return: 无返回值。
+*/
 
 void begin();
-
+/*
 无参数。这个方法启动Web服务器，开始监听传入的HTTP请求。
 @return: 无返回值。
+*/
 
 void handleClient();
-
+/*
 无参数。这个方法处理传入的客户端请求。应在 `loop()` 函数中周期性地调用，以确保服务器能够响应客户端请求。
 @return: 无返回值。
+*/
 
 void send(int code, const char* content_type, const String& content);
-
+/*
 @code: HTTP状态码（例如，200表示成功，404表示未找到）。
 @content_type: 响应内容的MIME类型（例如，`"text/html"`，`"application/json"`）。
 @content: 要发送的响应内容。
 @return: 无返回值。
+*/
 ```
 
 特别的是该对象返回给Client的页面以String类型输入，因此需要将HTML文件以字符串类型定义。
@@ -496,12 +519,8 @@ void handleSubmit() {
   webserver.send(303);
 
  } else {
-
   webserver.send(400, "text/plain", "Missing required parameters");
-
  }
-
-
 }
 ```
 
