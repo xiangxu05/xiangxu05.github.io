@@ -7,18 +7,12 @@ keywords: SRAM PUF, Embedded
 mermaid: false
 sequence: false
 flow: false
-mathjax: false
+mathjax: true
 mindmap: false
 mindmap2: false
 ---
 
 ​	SRAM PUF 一直是 PUF 设备种类中，较为热门的一个方向，那么对于这一类设备来说如何对其或者说对其产生的密钥和随机数进行评价呢，以下几篇论文都对其进行了阐述。
-
-\[ 
-
-\text{Reliability} = 100\% - HD_{\text{intra}} \tag{6} 
-
-\]
 
 ## 单芯片微型传感器和SRAM PUF的可行性研究
 
