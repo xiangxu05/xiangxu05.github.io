@@ -9,8 +9,10 @@ sequence: false
 flow: false
 mathjax: true
 mindmap: false
-mindmap2: false
+mindmap2: false 
 ---
+
+这篇文章用于记录关于ECDSA的学习原理，并基于ECDSA做的使用SRAM PUF进行签名思路。
 
 ## 一、基本概念
 
