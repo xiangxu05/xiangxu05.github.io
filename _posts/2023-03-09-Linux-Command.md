@@ -440,11 +440,11 @@ ONBOOT=true
 
 ​	vim 文件名 存在则打开 不存在则创建临时文件，保存后会新建
 
-![image-20240903104405752](D:\Jobs\web\xiangxu05.github.io\_posts\2023-03-09-Linux-Command.assets\image-20240903104405752.png)
+![image-20240903104405752](/images/posts/2023-03-09-Linux-Command.assets/image-20240903104405752.png)
 
 ​	1）  末行模式保存文件
 
-![image-20240903104414629](D:\Jobs\web\xiangxu05.github.io\_posts\2023-03-09-Linux-Command.assets\image-20240903104414629.png)
+![image-20240903104414629](/images/posts/2023-03-09-Linux-Command.assets\image-20240903104414629.png)
 
 ​	Ctrl+u 向上翻半页。
 
@@ -514,21 +514,21 @@ ONBOOT=true
 
 ​	③其他命令
 
-![image-20240903104442168](D:\Jobs\web\xiangxu05.github.io\_posts\2023-03-09-Linux-Command.assets\image-20240903104442168.png)
+![image-20240903104442168](/images/posts/2023-03-09-Linux-Command.assets\image-20240903104442168.png)
 
 ​	cat -N 显示行号
 
-![image-20240903104447496](D:\Jobs\web\xiangxu05.github.io\_posts\2023-03-09-Linux-Command.assets\image-20240903104447496.png)
+![image-20240903104447496](/images/posts/2023-03-09-Linux-Command.assets\image-20240903104447496.png)
 
 ​	④tail [参数选项] 文件 查看文件的最后部分
 
-![image-20240903104452245](D:\Jobs\web\xiangxu05.github.io\_posts\2023-03-09-Linux-Command.assets\image-20240903104452245.png)
+![image-20240903104452245](/images/posts/2023-03-09-Linux-Command.assets\image-20240903104452245.png)
 
 ​	tail -f 动态显示 ctrl+c退出
 
 ​	⑤grep [参数选项] 关键字 文件  根据关键词，搜索文本文件内容
 
-![image-20240903104457881](D:\Jobs\web\xiangxu05.github.io\_posts\2023-03-09-Linux-Command.assets\image-20240903104457881.png)
+![image-20240903104457881](/images/posts/2023-03-09-Linux-Command.assets\image-20240903104457881.png)
 
 ​	-c 查找进程个数
 
@@ -556,7 +556,7 @@ ONBOOT=true
 
 ​	find [参数选项] <指定目录> <指定条件> <指定内容> 在指定目录下查找文件
 
-![image-20240903104524294](D:\Jobs\web\xiangxu05.github.io\_posts\2023-03-09-Linux-Command.assets\image-20240903104524294.png)
+![image-20240903104524294](/images/posts/2023-03-09-Linux-Command.assets\image-20240903104524294.png)
 
 ​	示例：
 
@@ -578,7 +578,7 @@ ONBOOT=true
 
 ​	③ tar [必要参数] [选择参数] [文件] 打包、压缩和解压（文件/文件夹）
 
-![image-20240903104534451](D:\Jobs\web\xiangxu05.github.io\_posts\2023-03-09-Linux-Command.assets\image-20240903104534451.png)
+![image-20240903104534451](/images/posts/2023-03-09-Linux-Command.assets\image-20240903104534451.png)
 
 ​	④ zip命令
 
@@ -600,13 +600,13 @@ ONBOOT=true
 
 ​	查找安装下载卸载命令
 
-![image-20240903104545233](D:\Jobs\web\xiangxu05.github.io\_posts\2023-03-09-Linux-Command.assets\image-20240903104545233.png)
+![image-20240903104545233](/images/posts/2023-03-09-Linux-Command.assets\image-20240903104545233.png)
 
 ​	-y 若需确认 一致确定
 
 ​	更改yum源
 
-![image-20240903104551743](D:\Jobs\web\xiangxu05.github.io\_posts\2023-03-09-Linux-Command.assets\image-20240903104551743.png)
+![image-20240903104551743](/images/posts/2023-03-09-Linux-Command.assets\image-20240903104551743.png)
 
 **（6）统计文本文件的行数、单词数和字节数**
 
