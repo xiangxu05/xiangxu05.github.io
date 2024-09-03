@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 论文｜主流SRAM PUF的评价方法
-categories: [Embedded]
+categories: [Coding Theory]
 description: 几篇较新论文中SRAM PUF的评价方法。
 keywords: SRAM PUF, Embedded
 mermaid: false
