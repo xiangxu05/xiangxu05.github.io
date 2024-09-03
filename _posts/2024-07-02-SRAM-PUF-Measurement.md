@@ -101,7 +101,7 @@ mindmap2: false
 
 ​	**这边与前文不同的计算方式，是考虑了同种实现方式的多个不同设备来计算独立性，因此引入了一个d。而为什么没有随机性的计算，可能是这篇文章中只做出了4位的最基本单元，计算随机性没什么意义。**
 
-![image-20240702162659183](D:\Jobs\xiangxu05.github.io\_posts\2024-07-02-SRAM-PUF-Measurement.assets\image-20240702162659183.png)
+![image-20240702162659183](/images/posts/2024-07-02-SRAM-PUF-Measurement.assets/image-20240702162659183.png)
 
 ## 参考文献
 
