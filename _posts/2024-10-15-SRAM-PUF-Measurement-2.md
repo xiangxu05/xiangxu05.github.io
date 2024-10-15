@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 论文｜主流SRAM PUF的评价方法
+title: 论文｜主流SRAM PUF的评价方法-2
 categories: [Coding Theory]
 description: 几篇较新论文中SRAM PUF的评价方法。
 keywords: SRAM PUF, Embedded
@@ -12,7 +12,7 @@ mindmap: false
 mindmap2: false
 ---
 
-​	SRAM PUF 一直是 PUF 设备种类中，较为热门的一个方向，那么对于这一类设备来说如何对其或者说对其产生的密钥和随机数进行评价呢，以下几篇论文都对其进行了阐述。
+​	SRAM PUF 一直是 PUF 设备种类中，较为热门的一个方向，那么对于这一类设备来说如何对其或者说对其产生的密钥和随机数进行评价呢，以下几篇论文都对其进行了阐述。（续借上文-1）
 
 ## 单芯片微型传感器和SRAM PUF的可行性研究
 
