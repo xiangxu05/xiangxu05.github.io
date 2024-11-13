@@ -28,43 +28,43 @@ mindmap2: false
 
 几个符号表示：
 
-![image-20241112195530197](D:\Jobs\web\xiangxu05.github.io\_posts\2024-10-21-SRAM-PUF-Measurement-3.assets\image-20241112195530197.png)
+![image-20241112195530197](/images/posts/2024-10-21-SRAM-PUF-Measurement-3.assets\image-20241112195530197.png)
 
 #### 唯一性
 
 ​	唯一性代表了PUF在一组相同类型的芯片中唯一地区分一个特定芯片的能力。
 
-![image-20241112194430271](D:\Jobs\web\xiangxu05.github.io\_posts\2024-10-21-SRAM-PUF-Measurement-3.assets\image-20241112194430271.png)
+![image-20241112194430271](/images/posts/2024-10-21-SRAM-PUF-Measurement-3.assets\image-20241112194430271.png)
 
 #### 可靠性
 
 ​	PUF的可靠性反映了PUF在重现响应位方面的效率。
 
-![image-20241112195836871](D:\Jobs\web\xiangxu05.github.io\_posts\2024-10-21-SRAM-PUF-Measurement-3.assets\image-20241112195836871.png)
+![image-20241112195836871](/images/posts/2024-10-21-SRAM-PUF-Measurement-3.assets\image-20241112195836871.png)
 
 #### 均匀性
 
 ​	PUF的均匀性估计了PUF的响应位中discloit0s和scloit1s的比例有多均匀。
 
-![image-20241112195755547](D:\Jobs\web\xiangxu05.github.io\_posts\2024-10-21-SRAM-PUF-Measurement-3.assets\image-20241112195755547.png)
+![image-20241112195755547](/images/posts/2024-10-21-SRAM-PUF-Measurement-3.assets\image-20241112195755547.png)
 
 #### 位混叠
 
 ​	如果发生位混叠，不同的芯片可能产生几乎相同的PUF响应，这是一个不理想的效果。
 
-![image-20241112194738744](D:\Jobs\web\xiangxu05.github.io\_posts\2024-10-21-SRAM-PUF-Measurement-3.assets\image-20241112194738744.png)
+![image-20241112194738744](/images/posts/2024-10-21-SRAM-PUF-Measurement-3.assets\image-20241112194738744.png)
 
 #### 稳定性
 
-![image-20241112200442558](D:\Jobs\web\xiangxu05.github.io\_posts\2024-10-21-SRAM-PUF-Measurement-3.assets\image-20241112200442558.png)
+![image-20241112200442558](/images/posts/2024-10-21-SRAM-PUF-Measurement-3.assets\image-20241112200442558.png)
 
 #### 分散性
 
-![image-20241112200518608](D:\Jobs\web\xiangxu05.github.io\_posts\2024-10-21-SRAM-PUF-Measurement-3.assets\image-20241112200518608.png)
+![image-20241112200518608](/images/posts/2024-10-21-SRAM-PUF-Measurement-3.assets\image-20241112200518608.png)
 
 #### PMSID误识别率
 
-![image-20241112200329243](D:\Jobs\web\xiangxu05.github.io\_posts\2024-10-21-SRAM-PUF-Measurement-3.assets\image-20241112200329243.png)
+![image-20241112200329243](/images/posts/2024-10-21-SRAM-PUF-Measurement-3.assets\image-20241112200329243.png)
 
 ## Determining the Quality Metrics for PUFs and Performance Evaluation of Two RO-PUFs
 
@@ -82,7 +82,7 @@ mindmap2: false
 
    ​	如果这组测量值在统计上是独立的，它们的汉明距离（HD）将是50%。
 
-   ![image-20241021230320498](D:\Jobs\web\xiangxu05.github.io\_posts\2024-10-21-SRAM-PUF-Measurement-3.assets\image-20241021230320498.png)
+   ![image-20241021230320498](/images/posts/2024-10-21-SRAM-PUF-Measurement-3.assets\image-20241021230320498.png)
 
    公式解释：
 
@@ -110,7 +110,7 @@ mindmap2: false
 
    ​	文章认为PUF数据的HD分布在理想状态下应该与高斯分布相关联，因此通过计算理想分布与实际分布之间的相关系数，结果越接近于1，分布就越高斯；因此电路在唯一性方面表现更好。
 
-   ![image-20241021230850690](D:\Jobs\web\xiangxu05.github.io\_posts\2024-10-21-SRAM-PUF-Measurement-3.assets\image-20241021230850690.png)
+   ![image-20241021230850690](/images/posts/2024-10-21-SRAM-PUF-Measurement-3.assets\image-20241021230850690.png)
 
    具体计算方法：
 
@@ -130,7 +130,7 @@ mindmap2: false
 
    ​	在收集了一定数量的数据后，计算出它们之间的最小距离dHm，并通过（3）和（4）确定R'。理想的R是通过（5）使用测量次数M和PUF长度N来计算的。如(6)所示，R与理想R的比例也可以作为唯一性的质量指标U QM3。如果输出是均匀分布的，意味着唯一性是理想的，那么最小HD与GVB兼容，U_QM3趋于统一。否则，最小HD比约束状态差，U_QM3小于1。
 
-   ![image-20241021231917786](D:\Jobs\web\xiangxu05.github.io\_posts\2024-10-21-SRAM-PUF-Measurement-3.assets\image-20241021231917786.png)
+   ![image-20241021231917786](/images/posts/2024-10-21-SRAM-PUF-Measurement-3.assets\image-20241021231917786.png)
 
    ​	
 
@@ -138,19 +138,19 @@ mindmap2: false
 
 ​	稳健性是指对于性能最好的PUF电路来说，理想情况下应该为零的片内变化。然而，由于环境的变化和结构的内部特征，输出的一些位可能在不同的测量中有所不同。稳健性是通过从单个集成电路中获取一些测量值并计算平均错误率R_QM1来衡量的。
 
-![image-20241024162740142](D:\Jobs\web\xiangxu05.github.io\_posts\2024-10-21-SRAM-PUF-Measurement-3.assets\image-20241024162740142.png)
+![image-20241024162740142](/images/posts/2024-10-21-SRAM-PUF-Measurement-3.assets\image-20241024162740142.png)
 
 ​	由于某些使用PUF输出的系统需要无误差的数据，因此会利用纠错码来确保每次测量都能产生相同的输出。纠错码的复杂度，以及相应的成本，取决于它们能够纠正的最大错误位数。因此，我们认为对于这些系统来说，平均错误率并不是关键因素。相反，我们可以提出一个新的质量指标，即在一定次数的测量中出现的最大错误率，我们将其定义为R_QM2，它能够衡量系统的鲁棒性，具体内容如公式(8)所示。
 
-![image-20241024163523783](D:\Jobs\web\xiangxu05.github.io\_posts\2024-10-21-SRAM-PUF-Measurement-3.assets\image-20241024163523783.png)
+![image-20241024163523783](/images/posts/2024-10-21-SRAM-PUF-Measurement-3.assets\image-20241024163523783.png)
 
 ​	另一组在文献中展示的数据是响应位上错误分布的情况。这些数据被用来掩盖错误最多的位，并计算出改进后的错误率。如果能够方便地检测出每个电路中最有问题的位，并在每次测量后消除它们，这种方法在实践中可能会很有帮助。因此，通过掩盖一定数量的位（在这个案例中是3位）来降低错误率，可以作为PUF电路鲁棒性的另一个质量指标，我们将其称为R_QM3。这个指标的计算方法如公式(9)所示，其中R'_QM1代表掩盖最错误的3位之后的平均错误率。
 
-![image-20241024163856093](D:\Jobs\web\xiangxu05.github.io\_posts\2024-10-21-SRAM-PUF-Measurement-3.assets\image-20241024163856093.png)
+![image-20241024163856093](/images/posts/2024-10-21-SRAM-PUF-Measurement-3.assets\image-20241024163856093.png)
 
 ​	提高PUF电路鲁棒性的一个常用方法是多数投票[10]、[11]。每个输出位都是通过多数投票生成的。这种方法尤其在正常工作条件下提高了鲁棒性。因此，经过多数投票后的平均错误率，R_QM4，也可以作为一个重要的质量指标。这个指标的计算方法如公式(10)所示，其中R"_QM1代表进行了3次多数投票后的平均错误率。
 
-![image-20241024164312244](D:\Jobs\web\xiangxu05.github.io\_posts\2024-10-21-SRAM-PUF-Measurement-3.assets\image-20241024164312244.png)
+![image-20241024164312244](/images/posts/2024-10-21-SRAM-PUF-Measurement-3.assets\image-20241024164312244.png)
 
 ​	稳定位计数，即在每次测量中都能生成相同输出的位，也是一个重要的参数。如果选择并使用了稳定位，就消除了对纠错码的需求。因此，对于PUF结构来说，稳定位计数，R_QM5，可以作为鲁棒性的质量指标。由于PUF输出非常容易受到环境变化的影响，我们将根据正常工作条件(NOC)和变化温度(VT)下的质量指标来展示结果。
 
@@ -158,9 +158,9 @@ mindmap2: false
 
 ​	在前面的部分中，我们介绍了将从测量中计算出的质量指标。然而，为了进行可靠的性能评估，需要进行多少次测量仍然是一个值得商榷的问题。因此，为了展示结果的可信度，我们引入了置信区间和置信水平的概念，将其应用于PUF性能评估。在这种方法中，设定置信水平和置信区间来确定必须进行的测量次数。这是通过切比雪夫不等式[12]来计算的，如公式(11)-(14)所示。随着测量次数的增加，置信水平提高和/或置信区间缩小。例如，通过使用1000次测量可以实现99.9%的置信水平和0.1%的置信区间，而25次测量只提供95%的置信水平和2%的置信区间。测量次数、置信区间、置信水平和测量标准差之间的关系在图1和图2中展示。从图表中可以看出，随着测量次数的增加，结果的置信水平提高。第一个图表的置信区间宽了十倍，确保了在测量次数较少的情况下也能获得较高的置信水平。
 
-![image-20241024164828637](D:\Jobs\web\xiangxu05.github.io\_posts\2024-10-21-SRAM-PUF-Measurement-3.assets\image-20241024164828637.png)
+![image-20241024164828637](/images/posts/2024-10-21-SRAM-PUF-Measurement-3.assets\image-20241024164828637.png)
 
-![image-20241024164841152](D:\Jobs\web\xiangxu05.github.io\_posts\2024-10-21-SRAM-PUF-Measurement-3.assets\image-20241024164841152.png)
+![image-20241024164841152](/images/posts/2024-10-21-SRAM-PUF-Measurement-3.assets\image-20241024164841152.png)
 
 ## 参考文献
 
