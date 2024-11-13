@@ -14,7 +14,7 @@ mindmap2: false
 
 ​	SRAM PUF 一直是 PUF 设备种类中，较为热门的一个方向，那么对于这一类设备来说如何对其或者说对其产生的密钥和随机数进行评价呢，以下几篇论文都对其进行了阐述。（续接上文-1）
 
-​	第三部分文字更新于地址：[论文｜主流SRAM PUF的评价方法-3 — XX者说](https://xiangxu05.github.io/2024/10/15/SRAM-PUF-Measurement-3/)
+​	第三部分文字更新于地址：[论文｜主流SRAM PUF的评价方法-3 — XX者说](https://xiangxu05.github.io/2024/10/21/SRAM-PUF-Measurement-3/)
 
 ## PUF在公共领域的应用：在操作系统层面增强嵌入式安全
 
