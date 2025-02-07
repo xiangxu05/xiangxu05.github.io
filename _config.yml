@@ -2,12 +2,12 @@
 #   Main Configs   #
 # ---------------- #
 baseurl:
-url: https://xiangxu05.github.io
+url: http://blog.xxsay.online
 date_format: "ordinal"
 title: XX者说
 subtitle: "你好，我是项许"
 description: "鑫鑫的个人博客"
-keywords: XX者说, Jiaxin Xu, xxlogin, xujiaxin, 程序员
+keywords: XX者说, Jiaxin Xu, xxBlog, xujiaxin, 程序员
 timezone: Asia/Shanghai
 encoding: "utf-8"
 # 页面左下角显示的年份
